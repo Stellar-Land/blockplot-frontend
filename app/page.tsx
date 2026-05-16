@@ -1,3 +1,5 @@
+import ConnectButton from "@/components/ConnectButton"
+
 const stats = [
   { label: "Total Assets Tokenized", value: "24" },
   { label: "Total Value Locked", value: "$4.2M" },
@@ -47,9 +49,7 @@ export default function Home() {
             <a href="#" className="hover:text-white transition-colors">Governance</a>
             <a href="#" className="hover:text-white transition-colors">Docs</a>
           </div>
-          <button className="rounded-full bg-blue-600 px-5 py-2 text-sm font-medium hover:bg-blue-500 transition-colors">
-            Connect Wallet
-          </button>
+          <ConnectButton />
         </div>
       </nav>
 
