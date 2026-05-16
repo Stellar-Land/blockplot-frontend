@@ -1,3 +1,4 @@
+import Link from "next/link"
 import ConnectButton from "@/components/ConnectButton"
 
 const stats = [
@@ -47,7 +48,7 @@ export default function Home() {
             <a href="#" className="hover:text-white transition-colors">Assets</a>
             <a href="#" className="hover:text-white transition-colors">Portfolio</a>
             <a href="#" className="hover:text-white transition-colors">Governance</a>
-            <a href="#" className="hover:text-white transition-colors">Docs</a>
+            <Link href="/docs" className="hover:text-white transition-colors">Docs</Link>
           </div>
           <ConnectButton />
         </div>
@@ -75,9 +76,12 @@ export default function Home() {
             <button className="rounded-full bg-blue-600 px-8 py-3 text-sm font-semibold hover:bg-blue-500 transition-colors">
               Explore Assets
             </button>
-            <button className="rounded-full border border-white/10 px-8 py-3 text-sm font-medium text-gray-300 hover:border-white/20 hover:text-white transition-colors">
+            <Link
+              href="/docs"
+              className="rounded-full border border-white/10 px-8 py-3 text-sm font-medium text-gray-300 hover:border-white/20 hover:text-white transition-colors"
+            >
               Read the Docs
-            </button>
+            </Link>
           </div>
         </div>
       </section>
